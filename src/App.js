@@ -18,7 +18,7 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar">
-        <a className="navbar-brand" href="#">ArcTec</a>
+        <a className="navbar-brand" href="#"><img src={logo} /></a>
         <ul className="nav navbar-nav float-xs-right">
           <li className="nav-item">
             <a className="nav-link" href="#">About</a>
