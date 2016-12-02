@@ -2,3 +2,7 @@ body {
   background-color: #FBFCFF;
   color: #2F2D2E;
 }
+
+.navbar-brand img {
+  height: 40px;
+}
