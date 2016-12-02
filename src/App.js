@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import mockup from '../public/img/mockup.png';
 import './App.css';
 
 class App extends Component {
@@ -35,7 +34,8 @@ class Header extends Component {
 
 class Photo extends Component {
   render() {
-    return (<p>Hi im a photo component</p>);
+    var file = this.props.src;
+    return (<p>hi</p>);
   }
 }
 
@@ -47,70 +47,70 @@ class Gallery extends Component {
           <div className="col-md-8">
             <div className="row">
               <div className="col-md-6">
-                <Photo />
+                <img src={require('../public/img/01.jpg')} className="img-fluid"/>
               </div>
               <div className="col-md-6">
-                <p>img 02</p>
+                <img src={require('../public/img/02.jpg')} className="img-fluid"/>
               </div>
             </div>
             <div className="row">
               <div className="col-md-6">
-                <p>img 03</p>
+                <img src={require('../public/img/03.jpg')} className="img-fluid"/>
               </div>
               <div className="col-md-6">
-                <p>img 04</p>
+                <img src={require('../public/img/04.jpg')} className="img-fluid"/>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <p>img 05</p>
+            <img src={require('../public/img/05.jpg')} className="img-fluid"/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-8">
-            <p>img 06</p>
+            <img src={require('../public/img/06.jpg')} className="img-fluid"/>
           </div>
           <div className="col-md-4">
-            <p>img 07</p>
+            <img src={require('../public/img/07.jpg')} className="img-fluid"/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <p>img 08</p>
+            <img src={require('../public/img/08.jpg')} className="img-fluid"/>
           </div>
           <div className="col-md-8">
-            <p>img 09</p>
+            <img src={require('../public/img/09.jpg')} className="img-fluid"/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <p>img 10</p>
+            <img src={require('../public/img/10.jpg')} className="img-fluid"/>
           </div>
           <div className="col-md-4">
             <div className="row">
               <div className="col-md-12">
-                <p>img 11</p>
+                <img src={require('../public/img/11.jpg')} className="img-fluid"/>
               </div>
             </div>
             <div className="row">
               <div className="col-md-12">
-                <p>img 12</p>
+                <img src={require('../public/img/12.jpg')} className="img-fluid"/>
               </div>
             </div>
           </div>
           <div className="col-md-4">
-            <p>img 13</p>
+            <img src={require('../public/img/13.jpg')} className="img-fluid"/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-4">
-            <p>img 14</p>
+            <img src={require('../public/img/14.jpg')} className="img-fluid"/>
           </div>
           <div className="col-md-4">
-            <p>img 15</p>
+            <img src={require('../public/img/15.jpg')} className="img-fluid"/>
           </div>
           <div className="col-md-4">
-            <p>img 16</p>
+            <img src={require('../public/img/16.jpg')} className="img-fluid"/>
           </div>
         </div>
       </div>
